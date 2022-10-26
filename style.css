@@ -1,0 +1,54 @@
+body {
+
+    margin: 0 auto;
+}
+
+.wrapper {
+    max-width: 100%;
+    height: 7080x;
+}
+
+.guide {
+    max-width: 1160px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+header {
+    max-width: 100%;
+    position: relative;
+    height: 80px;
+    background: black;
+}
+
+.logo_h1 {
+    display: flex;
+    align-items: center;
+    border: 2px solid white;
+    max-width: 82px;
+    max-height: 52px;
+    font-family: 'Roboto', sans-serif;
+    color: #FFFFFF;
+    align-items: center;
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 120%;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+main {
+    background-image: url(/assets/images/Giant\ Pandagiant-panda-bgd.jpg);
+    background-repeat: no-repeat;
+    background-size: auto;
+    height: 780px;
+    margin-top: -80px;
+
+}
