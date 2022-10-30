@@ -47,6 +47,10 @@ header {
     color: #FFFFFF;
 }
 
+.header_logo_link {
+    text-decoration: none;
+}
+
 h1 {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
@@ -90,12 +94,18 @@ h1 {
     color: #FFFFFF;
 }
 
+.anchor:hover {
+    transform: scale(1.2);
+    color: #f9f004;
+    transition: all ease-in 0.2s;
+    text-shadow: 1px 1px 1px #0feff7;
+}
+
 .anchor_about {
     color: orange;
 }
 
-.designed_by {
-    margin-left: 16.8%;
+.header_designed {
     text-decoration: none;
     font-family: 'Roboto';
     font-style: normal;
@@ -104,7 +114,29 @@ h1 {
     line-height: 140%;
     color: #FFFFFF;
 }
+.designed_by {
+    margin-left: 16.8%;
+    text-decoration: none;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+}
 
+.header_designed:hover {
+    transform: scale(1.2);
+    color: #f9f004;
+    transition: all ease-in 0.2s;
+    text-shadow: 1px 1px 1px #0feff7;
+}
+
+.designed_by:hover {
+    transform: scale(1.2);
+    transition: all ease-in 0.2s;
+}
+
+/* MAIN */
 main {
     margin: 0 auto;
     background-color:#FFFFFF;
@@ -180,30 +212,31 @@ main {
     color: #FFFFFF;
 }
 
-
-.backstage_wrapper {
-    overflow: hidden;
-    position: relative;
-    max-width: 100%;
+.watch_btn:hover, .slider_btn_left:hover, .slider_btn_right:hover,.feed_friend_btn:hover, .subscribe_btn:hover, .choose_favorite_btn:hover, .testimonials_btn:hover, .footer_btn:hover {
+    transform: scale(1.05);
+    transition: all ease-in 0.2s;
+    cursor: pointer;
+    box-shadow: 0px 0px 6px 2px #ffc708;
+    font-size: 115%;
 }
 
-.backstage_wrapper::before {
-    content: '';
-    position: absolute;
-    top: 13px;
-    right: -84px;
+.watch_btn:active, .slider_btn_left:active, .slider_btn_right:active,.feed_friend_btn:active, .subscribe_btn:active, .choose_favorite_btn:active, .testimonials_btn:active, .footer_btn:active {
+    cursor: grab;
+}
+
+.backstage_wrapper {
+    max-width: 100%;
     background-image: url(./assets/images/flower_foto1.jpg);
     background-repeat: no-repeat;
-    height: 590px;
-    width: 18%;
+    background-position: right 11%;
+    padding-bottom: 10.1%;
+    padding-top: 6.29%;
 }
 
 .backstage_section {
     display: flex;
     max-width: 1160px;
     margin: auto;
-    margin-bottom: 10.1%;
-    margin-top: 6.29%;
 }
 
 .photo_backstage {
@@ -255,33 +288,11 @@ main {
 }
 
 .pets_wrapper {
-    overflow: hidden;
-    position: relative;
     max-width: 100%;
     z-index: 1;
-}
-
-.pets_wrapper::before {
-    content: '';
-    position: absolute;
-    background-image: url(./assets/images/palm_foto.jpg);
-    background-repeat: no-repeat;
-    width: 17%;
-    height: 52%;
-    top: 58.4%;
-    left: 0%;
-}
-
-.pets_wrapper::after {
-    content: '';
-    position: absolute;
-    background-image: url(./assets/images/strelitzia\ 1.jpg);
-    background-repeat: no-repeat;
-    width: 24%;
-    height: 57%;
-    top: 75.16%;
-    right: -1%;
-    z-index: -1;
+    background-image: url(./assets/images/palm_foto.jpg), url(./assets/images/strelitzia\ 1.jpg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: left bottom, right bottom;
 }
 
 .pets_section {
@@ -315,6 +326,7 @@ main {
     height: 427px;
     width: 31.55%;
     border: 0.5px solid #F9804B;
+    background-color: #fff;
 }
 
 .animals {
@@ -359,7 +371,6 @@ main {
     margin-right: 0.7%;
     padding-bottom: 3.4%;
     margin-top: -2%;
-
 }
 
 .head_animals {
@@ -386,19 +397,7 @@ main {
     position: relative;
 }
 
-.gorilla_herb::before, .sloth_herb::before{
-    content: '';
-    position: absolute;
-    background-image: url(./assets/icons/banana-bamboo_icon.svg);
-    background-repeat: no-repeat;
-    width: 10%;
-    height: 60%;
-    top: 102.5%;
-    left: 87.5%;
-
-}
-
-.panda_herb::before {
+.panda_herb::before, .gorilla_herb::before, .sloth_herb::before {
     content: '';
     position: absolute;
     background-image: url(./assets/icons/banana-bamboo_icon.svg);
@@ -413,7 +412,7 @@ main {
     position: relative;
 }
 
-.eagle_carn::before {
+.eagle_carn::before, .cheetah_carn::before, .penguin_carn::before {
     content: '';
     position: absolute;
     background-image: url(./assets/icons/meet-fish_icon.svg);
@@ -424,16 +423,44 @@ main {
     left: 85%;
 }
 
-.cheetah_carn::before, .penguin_carn::before{
-    content: '';
-    position: absolute;
-    background-image: url(./assets/icons/meet-fish_icon.svg);
-    background-repeat: no-repeat;
-    width: 15%;
-    height: 60%;
-    top: 102%;
-    left: 84%;
+/* интерактив карточек */
+.frame {
+    position: relative;
+    cursor: pointer;
 }
+
+.frame .card-hover {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(9, 9, 9);
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: all ease-in 0.3s;
+    color: white;
+    display: flex;
+    font-size: 30px;
+    box-sizing: border-box;
+    padding: 25px;
+    padding-top: 30px;
+}
+
+.frame:hover .card-hover {
+    opacity: 0.7;
+}
+
+.frame:hover .animal_description {
+    opacity: 0;
+}
+
+.frame:hover .animals {
+    transition: all linear 0.3s;
+    background-size: 120%;
+    height:100%;
+    margin: 0 auto;
+}
+ /* __________________________________________________ */
 
 .slider_btn_right {
     position: absolute;
@@ -568,7 +595,7 @@ main {
     justify-content: space-around;
     margin: 0 auto;
     width: 68.6%;
-    margin-bottom: 62px;
+    margin-bottom: 61px;
 }
 
 .image {
@@ -628,7 +655,7 @@ main {
     font-weight: 400;
     font-size: 16px;
     line-height: 140%;
-    margin-top: 29px;
+    margin-top: 28px;
     margin-bottom: 0;
 }
 
@@ -652,8 +679,10 @@ main {
     color: #FFFFFF;
 }
 
-.p_three span {
+.p_three a {
+    text-decoration: none;
     border-bottom:1px solid #F9804B;
+    color: #000000;
 }
 
 .head_how_it_works {
@@ -676,19 +705,9 @@ main {
     width: 100%;
     padding-top: 140px;
     padding-bottom: 181px;
-    overflow: hidden;
-}
-
-.testimonials_wrapper::before {
-    content: '';
-    position: absolute;
-    top: 644px;
-    right: -553px;
-    height: 50%;
-    width: 50%;
-    background-color: #FFFFFF;
     background-image: url(./assets/images/leav_foto.jpg);
     background-repeat: no-repeat;
+    background-position: right 126%;
 }
 
 .testimonials_container {
@@ -826,7 +845,7 @@ main {
     max-width: 100%;
     background-color: #111115;
     padding-top: 40px;
-    padding-bottom: 3px;
+    padding-bottom: 33px;
 }
 
 .footer_container {
@@ -872,6 +891,13 @@ main {
     height: 36px;
 }
 
+.footer_links a:hover {
+    transform: scale(1.1);
+    transform: translate(10px);
+    color: #f9f004;
+    transition: all ease-in 0.2s;
+}
+
 .footer_middle {
     margin-top: 316px;
     margin-left: 47px;
@@ -897,6 +923,11 @@ main {
 .submit_form {
     display: flex;
     margin-right: -6px;
+}
+
+.submit_form:focus-within button {
+    background-color: #4b92002b;
+    color:  #F1F3F2;
 }
 
 .footer_input {

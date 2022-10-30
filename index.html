@@ -17,12 +17,12 @@
         <header>
             <div class="guide">
                <div class="logo_h1">
-                <h1>PetStory online</h1>
+                <a class="header_logo_link" href="https://hopelessju.github.io/online-zoo/"> <h1>PetStory online</h1></a>
                </div>
                 <nav class="nav_header">
                     <ul class="nav_ul">
                         <li class="nav_li">
-                            <a class="anchor anchor_about" href="#">About</a>
+                            <a class="anchor anchor_about" href="https://hopelessju.github.io/online-zoo/">About</a>
                         </li>
                         <li class="nav_li">
                             <a class="anchor anchor_map" href="#">Map</a>
@@ -31,14 +31,14 @@
                             <a class="anchor anchor_zoos" href="#">Zoos</a>
                         </li>
                         <li class="nav_li">
-                            <a class="anchor anchor_donate" href="#">Donate</a>
+                            <a class="anchor anchor_donate" href="./pages/donate/index.html">Donate</a>
                         </li>
                         <li class="nav_li">
                             <a class="anchor anchor_contact" href="#">Contact us</a>
                         </li>
                     </ul>
                 </nav>
-                <div class="designed_by">Designed by ©</div>
+                <div class="designed_by"><a class="header_designed" href="https://www.figma.com/file/jfEFwkXVj1WRq7sUHDr8os/PetStory-online?node-id=0%3A1" target="_blank"> Designed by ©</a></div>
             </div>
         </header>
         <main>
@@ -65,6 +65,9 @@
                     <div class="slider_block">
                         <div class="slider_upper_row">
                             <div class="frame">
+                                <div class="card-hover">
+                                    <span>Giant Pandas. <br>Native to Southwest China</span>
+                                </div>
                                 <div class="animals panda"></div>
                                 <div class="animal_description panda_herb">
                                     <h4 class="head_animals">giant pandas</h4>
@@ -72,6 +75,9 @@
                                 </div>
                             </div>
                             <div class="frame">
+                                <div class="card-hover">
+                                    <span>Eagles.<br>Native to South America</span>
+                                </div>
                                 <div class="animals eagle"></div>
                                 <div class="animal_description eagle_carn">
                                         <h4 class="head_animals">eagles</h4>
@@ -79,8 +85,11 @@
                                 </div>
                             </div>
                             <div class="frame">
-                                <div class="animals gorilla gorilla_herb"></div>
-                                <div class="animal_description">
+                                <div class="card-hover">
+                                    <span>Gorillas.<br>Native to Congo</span>
+                                </div>
+                                <div class="animals gorilla"></div>
+                                <div class="animal_description gorilla_herb">
                                     <h4 class="head_animals">gorillas</h4>
                                     <div class="area area_gorilla">Native to Congo</div>
                                 </div>
@@ -88,22 +97,31 @@
                         </div>
                         <div class="slider_lower_row">
                             <div class="frame">
-                                <div class="animals sloth sloth_herb"></div>
-                                <div class="animal_description">
+                                <div class="card-hover">
+                                    <span>Two-toed Sloth. <br> Mesoamerica, South America</span>
+                                </div>
+                                <div class="animals sloth"></div>
+                                <div class="animal_description sloth_herb">
                                     <h4 class="head_animals">two-toed sloth</h4>
                                     <div class="area area_sloth">Mesoamerica, South America</div>
                                 </div>
                             </div>
                             <div class="frame">
-                                <div class="animals cheetah cheetah_carn"></div>
-                                <div class="animal_description ">
+                                <div class="card-hover">
+                                    <span>Cheetah. <br> Native to Africa</span>
+                                </div>
+                                <div class="animals cheetah"></div>
+                                <div class="animal_description cheetah_carn">
                                     <h4 class="head_animals">cheetahs</h4>
                                     <div class="area area_cheetah">Native to Africa</div>
                                 </div>
                             </div>
                             <div class="frame">
-                                <div class="animals penguin penguin_carn"></div>
-                                    <div class="animal_description">
+                                <div class="card-hover">
+                                    <span>Penguins. Native to Antarctica</span>
+                                </div>
+                                <div class="animals penguin"></div>
+                                    <div class="animal_description penguin_carn">
                                         <h4 class="head_animals">penguins</h4>
                                         <div class="area area_penguin">Native to Antarctica</div>
                                     </div>
@@ -121,7 +139,7 @@
                         <h2 class="head_pick">Pick and feed a friend</h2>
                         <p class="p_one">We know the animals bring you joy, and in these extraordinary times, we’re glad.</p>
                         <p class="p_two">During a time when the COVID-19 epidemic is touching all of our lives, we’re proud and glad that people around the world find joy in PetStory.</p>
-                        <p class="p_three">Even though the zoo has reopened, we need you now more than ever to help us deal with these problems. Please consider a gift to our <span>Emergency Support Fund</span>. </p>
+                        <p class="p_three">Even though the zoo has reopened, we need you now more than ever to help us deal with these problems. Please consider a gift to our <a class="emergency" href="./pages/donate/index.html">Emergency Support Fund</a>. </p>
                     </div>
                     <div class="how_it_works">
                         <h3 class="head_how_it_works">How it works</h3>
@@ -247,10 +265,10 @@
                     </div>
                     <div class="footer_right">
                         <div class="subscribe">Subscribe to our news</div>
-                        <div class="submit_form">
-                            <input class="footer_input" type="email" placeholder="Enter your email">
-                            <button class="subscribe_btn">Submit</button>
-                        </div>
+                        <form class="submit_form">
+                            <input class="footer_input" type="email" placeholder="Enter your email" required>
+                            <button type='submit' class="subscribe_btn">Submit</button>
+                        </form>
                         <div class="footer_designed_by">
                             <p>Designed by Alisa Samborskaya <br> ©RSSchool & ©Yem Digital 2021</p>
                         </div>
