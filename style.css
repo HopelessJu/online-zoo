@@ -433,7 +433,7 @@ main {
 .frame .card-hover {
     width: 100%;
     height: 100%;
-    background-color: rgb(9, 9, 9);
+    background-color: rgba(22, 22, 22, 0.708);
     position: absolute;
     top: 0;
     left: 0;
@@ -445,10 +445,11 @@ main {
     box-sizing: border-box;
     padding: 25px;
     padding-top: 30px;
+    z-index: 1;
 }
 
 .frame:hover .card-hover {
-    opacity: 0.6;
+    opacity: 0.9;
 }
 
 .frame:hover .animal_description {
@@ -457,19 +458,33 @@ main {
 
 .frame:hover .animals {
     transition: all linear 0.4s;
-    background-size: 120%;
-    width: 120%;
-    background-position-x: -100px;
-    height:100%;
+    transform:scale(1.4);
 }
 
 .card-hover span {
     font-family: 'Roboto';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 120%;
+    text-align: left;
+    margin: 0 auto;
+}
+
+.card-hover {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+
+.card-hover h2 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
     font-size: 24px;
     line-height: 120%;
     text-align: left;
+    margin: 0 auto;
 }
  /* __________________________________________________ */
 
@@ -754,7 +769,7 @@ main {
 
 .comment_card {
     box-sizing: border-box;
-    padding: 14px 13px 14px 12px;
+    padding: 15px 16px 14px 14px;
     margin: 2px auto;
     width: 265px;
     height: 387px;
@@ -805,9 +820,22 @@ main {
     font-weight: 300;
     font-size: 15px;
     line-height: 120%;
-    color: #767474;
+    color: #3f3f3f;
     overflow: scroll;
-    max-height: 85%;
+    max-height: 90%;
+}
+
+.comment_text::-webkit-scrollbar {
+    width: 3px;
+    margin-right: 8px;
+}
+
+.comment_text::-webkit-scrollbar-corner {
+    display: none;
+}
+
+.comment_text::-webkit-scrollbar-thumb {
+    background: linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
 }
 
 .slider_container {
