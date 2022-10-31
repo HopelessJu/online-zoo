@@ -689,7 +689,10 @@ main {
 }
 
 .feed_friend_btn {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
     width: 298px;
     height: 54px;
     margin: 0 auto;
