@@ -101,6 +101,25 @@ h1 {
     text-shadow: 1px 1px 1px #0feff7;
 }
 
+.designed_by a {
+    text-decoration: none;
+    color: white;
+}
+
+.designed_by a:hover {
+    color: #f9f004;
+}
+
+.designed_by {
+    margin-left: 16.8%;
+    text-decoration: none;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+}
+
 .designed_by:hover {
     cursor: pointer;
     transform: scale(1.2);
@@ -113,16 +132,6 @@ h1 {
     color: orange;
 }
 
-.designed_by {
-    margin-left: 16.8%;
-    text-decoration: none;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 140%;
-    color: #FFFFFF;
-}
 /* MAIN */
 .panda_wrapper {
     width: 100%;
