@@ -303,12 +303,13 @@ h1 {
     justify-content: space-between;
     width: 100%;
     margin-bottom: 50px;
-    margin-left: 25px;
+    margin-left: 2.6%;
 }
 .radio_btn {
     position: relative;
     display: flex;
     flex-direction: column;
+    width: 6.7%;
 }
 
 .radio_btn label {
@@ -320,18 +321,14 @@ h1 {
     font-size: 26px;
     line-height: 140%;
     text-transform: uppercase;
-    transition: color 0.4s ease;
+    transition: color 0.2s ease;
     color: #333B41;
-    width: 93px;
+    /* width: 93px; */
     margin-left: -28px;
 }
  .radio_input:checked+label, .radio_input:not(:checked)+label:hover, .radio_input:checked+label:hover .radio_input:not(:checked)+.radio_input:hover, .radio_input:hover+.radio_label {
     color: orange;
-    transition: color 0.4s ease;
- }
-
- .radio_label:hover {
-    transition: background-color 0.4s ease;
+    transition: color 0.1s ease;
  }
 
 .radio_input {
@@ -497,6 +494,7 @@ h1 {
 .custom_radio input:checked {
     transition: background-color 0.4s ease;
     background-color: orange;
+    box-shadow: 0 0 3px 3px transparent;
     border: 1px solid orange;
     width: 16px;
     height: 16px;
@@ -517,7 +515,7 @@ h1 {
     transition: all ease-in 0.2s;
     display: block;
     margin: auto;
-    margin-left: 342px;
+    margin-left: 35.14%;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
@@ -549,7 +547,7 @@ h1 {
 }
 
 .feed_end_p {
-    margin-left: 340px;
+    margin-left: 34.87%;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -567,7 +565,7 @@ h1 {
 }
 
 .footer_container {
-    width: 1160px;
+    width: 72.5%;
     margin: 0 auto;
     display: flex;
 }
@@ -676,7 +674,7 @@ h1 {
 
 .footer_middle {
     margin-top: 314px;
-    margin-left: 47px;
+    margin-left: 4%;
     width: 39.35%;
     box-sizing: border-box;
 }
@@ -715,13 +713,19 @@ h1 {
     line-height: 140%;
     color: #BDBDBD;
     background: transparent;
-    border: 1px solid #FE9013;
+    border: 1px solid green;
     height: 38px;
     width: 90%;
     padding-left: 9px;
 }
 
+.footer_input:invalid, .footer_input:invalid+.subscribe_btn{
+    border: 1px solid red;
+    color: red;
+}
+
 .subscribe_btn {
+    cursor: pointer;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -737,7 +741,7 @@ h1 {
 
 .footer_designed_by {
     margin-top: 213px;
-    margin-left: 139px;
+    margin-left: 38.6%;
     width: 228px;
     height: 21px;
     font-family: 'Roboto';
