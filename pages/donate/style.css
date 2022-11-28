@@ -887,7 +887,8 @@ header {
 }
 
 .custom_input {
-    width: 31.5%;
+    width: 16.9em;
+    background-position: 95% center;
 }
 
 .custom_radio_group {
@@ -1080,15 +1081,18 @@ header {
     .custom_radio_group {
         margin-left: -7.1em;
     }
+    */
 
     .feed_btn {
-        margin-left: 21%;
+        margin: 0 auto;
+        margin-bottom: 29px;
         height: 3.3em;
     }
 
     .feed_end_p {
-        margin-left: 20.6%;
-    } */
+        margin: 0 auto;
+        text-align: center;
+    }
 
     .footer_wrapper {
         padding-top: 0.8em;
@@ -1352,6 +1356,7 @@ header {
         width: 35%;
         height: 2.6em;
         margin-bottom: 2.1em;
+        background-position: 93% center;
     }
 
     .custom_radio_group {
