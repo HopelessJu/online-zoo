@@ -39,6 +39,11 @@
                     </ul>
                 </nav>
                 <div class="designed_by"><a class="header_designed" href="https://www.figma.com/file/jfEFwkXVj1WRq7sUHDr8os/PetStory-online?node-id=0%3A1" target="_blank"> Designed by ©</a></div>
+                <div class="burger-menu">
+                    <span class="burger-span"></span>
+                    <span class="burger-span"></span>
+                    <span class="burger-span"></span>
+                </div>
             </div>
         </header>
         <main>
@@ -63,8 +68,8 @@
             <div class="pets_wrapper">
                 <div class="pets_section">
                     <div class="slider_block">
-                        <div class="slider_upper_row">
-                            <div class="frame">
+                        <div class="slider-frames">
+                            <div class="frame frame-panda">
                                 <div class="card-hover">
                                     <h2>GIANT PANDAS</h2>
                                     <span>Native to Southwest China</span>
@@ -75,7 +80,7 @@
                                     <div class="area area_panda">Native to Southwest China</div>
                                 </div>
                             </div>
-                            <div class="frame">
+                            <div class="frame frame-eagles">
                                 <div class="card-hover">
                                     <h2>EAGLES</h2>
                                     <span>Native to South America</span>
@@ -86,7 +91,7 @@
                                         <div class="area area_eagle">Native to South America</div>
                                 </div>
                             </div>
-                            <div class="frame">
+                            <div class="frame frame-gorilla">
                                 <div class="card-hover">
                                     <h2>GORILLAS</h2>
                                     <span>Native to Congo</span>
@@ -97,9 +102,7 @@
                                     <div class="area area_gorilla">Native to Congo</div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="slider_lower_row">
-                            <div class="frame">
+                            <div class="frame frame-sloth">
                                 <div class="card-hover">
                                     <h2>TWO-TOED SLOTH</h2>
                                     <span> Mesoamerica, South America</span>
@@ -110,7 +113,7 @@
                                     <div class="area area_sloth">Mesoamerica, South America</div>
                                 </div>
                             </div>
-                            <div class="frame">
+                            <div class="frame frame-cheetah">
                                 <div class="card-hover">
                                     <h2>CHEETAHS</h2>
                                     <span> Native to Africa</span>
@@ -121,7 +124,7 @@
                                     <div class="area area_cheetah">Native to Africa</div>
                                 </div>
                             </div>
-                            <div class="frame">
+                            <div class="frame frame-penguin">
                                 <div class="card-hover">
                                     <h2>PENGUINS</h2>
                                     <span> Native to Antarctica</span>
@@ -240,7 +243,7 @@
         </main>
         <footer>
             <div class="footer_wrapper">
-                <div class="footer_container">
+                <div class="footer_container footer_max">
                     <div class="footer_left">
                         <a class="footer_logo" href="https://hopelessju.github.io/online-zoo/"><img src="./assets/images/logofooter.png" alt="link to the main page"></a>
                         <a class="footer_btn" href="./pages/donate/index.html">donate for volunteers</a>
@@ -279,6 +282,68 @@
                             <p>Designed by Alisa Samborskaya <br> ©RSSchool & ©Yem Digital 2021</p>
                         </div>
                     </div>
+                </div>
+                <div class="footer_container footer_min">
+                    <div class="footer_min_left">
+                        <a class="footer_logo" href="https://hopelessju.github.io/online-zoo/"><img src="./assets/images/logofooter.png" alt="link to the main page"></a>
+                        <a class="footer_btn" href="./pages/donate/index.html">donate for volunteers</a>
+                        <nav class="nav_footer">
+                            <ul class="nav_ul">
+                                <li class="nav_li">
+                                    <a class="anchor anchor_about" href="#">About</a>
+                                </li>
+                                <li class="nav_li">
+                                    <a class="anchor anchor_map" href="#">Map</a>
+                                </li>
+                                <li class="nav_li">
+                                    <a class="anchor anchor_zoos" href="#">Zoos</a>
+                                </li>
+                                <li class="nav_li">
+                                    <a class="anchor anchor_contact" href="#">Contact us</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="footer_min_right">
+                        <div class="footer_links">
+                            <a class="fcb_link" href="https://www.facebook.com/" target="_blank"><img src="./assets/icons/ellipse-icon.png" alt="facebook link"></a>
+                            <a class="twitter_link" href="https://twitter.com/" target="_blank"><img src="./assets/icons/ellipse-icon.png" alt="twitter link"></a>
+                            <a class="insta_link" href="https://www.instagram.com/" target="_blank"><img src="./assets/icons/ellipse-icon.png" alt="instagramlink"></a>
+                            <a class="youtube_link" href="https://www.youtube.com/" target="_blank"><img src="./assets/icons/ellipse-icon.png" alt="youtube link"></a>
+                        </div>
+                        <div class="footer_designed_by">
+                            <p>Designed by Alisa Samborskaya <br> ©RSSchool & ©Yem Digital 2021</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_container footer_mobile">
+                    <p class="footer_mobile_heading">PetStory online</p>
+                    <div class="footer_links">
+                        <a class="fcb_link" href="https://www.facebook.com/" target="_blank"><img src="./assets/icons/ellipse-icon.png" alt="facebook link"></a>
+                        <a class="twitter_link" href="https://twitter.com/" target="_blank"><img src="./assets/icons/ellipse-icon.png" alt="twitter link"></a>
+                        <a class="insta_link" href="https://www.instagram.com/" target="_blank"><img src="./assets/icons/ellipse-icon.png" alt="instagramlink"></a>
+                        <a class="youtube_link" href="https://www.youtube.com/" target="_blank"><img src="./assets/icons/ellipse-icon.png" alt="youtube link"></a>
+                    </div>
+                    <a class="footer_btn" href="./pages/donate/index.html">donate for volunteers</a>
+                    <div class="footer_designed_by">
+                        <p>Designed by Alisa Samborskaya <br> ©RSSchool & ©Yem Digital 2021</p>
+                    </div>
+                    <nav class="nav_footer">
+                        <ul class="nav_ul">
+                            <li class="nav_li">
+                                <a class="anchor anchor_about" href="#">About</a>
+                            </li>
+                            <li class="nav_li">
+                                <a class="anchor anchor_map" href="#">Map</a>
+                            </li>
+                            <li class="nav_li">
+                                <a class="anchor anchor_zoos" href="#">Zoos</a>
+                            </li>
+                            <li class="nav_li">
+                                <a class="anchor anchor_contact" href="#">Contact us</a>
+                            </li>
+                        </ul>
+                    </nav>
                 </div>
             </div>
         </footer>
