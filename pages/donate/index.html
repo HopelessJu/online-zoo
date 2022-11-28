@@ -39,6 +39,11 @@
                     </ul>
                 </nav>
                 <div class="designed_by"><a class="header_designed" href="https://www.figma.com/file/jfEFwkXVj1WRq7sUHDr8os/PetStory-online?node-id=0%3A1" target="_blank"> Designed by ©</a></div>
+                <div class="burger-menu">
+                    <span class="burger-span"></span>
+                    <span class="burger-span"></span>
+                    <span class="burger-span"></span>
+                </div>
             </div>
         </header>
         <main>
@@ -61,9 +66,11 @@
                                 <div class="amount_of_animals">4</div>
                                 <p>Panda diet for the day.</p>
                             </div>
-                            <div class="math_sign"><img src="../../assets/icons/x_icon.svg" alt="x-icon"></div>
+                            <div class="math_sign img_max"><img src="../../assets/icons/x_icon.svg" alt="x-icon"></div>
+                            <div class="math_sign img_min"><img src="../../assets/icons/x-mobile.png" alt="x-icon"></div>
                             <div class="panda_picture">
-                                <img src="../../assets/icons/panda_widget1.svg" alt="panda">
+                                <img  class="img_max" src="../../assets/icons/panda_widget1.svg" alt="panda">
+                                <img  class="img_min" src="../../assets/icons/panda-widget-mobile.png" alt="panda">
                             </div>
                         </div>
                         <div class="pay_amount">
@@ -73,15 +80,15 @@
                                     <div class="middle_line"></div>
                                 </div>
                                 <div class="pay_scale">
-                                    <div class="radio_btn">
+                                    <div class="radio_btn five-k">
                                         <input class="radio_input" type="radio" id="5000" value="5000" name="radio_group">
                                         <label class="radio_label" for="5000">$5000</label>
                                     </div>
-                                    <div class="radio_btn">
+                                    <div class="radio_btn two-k">
                                         <input class="radio_input" type="radio" id="2000" value="2000" name="radio_group">
                                         <label class="radio_label" for="2000">$2000</label>
                                     </div>
-                                    <div class="radio_btn">
+                                    <div class="radio_btn one-k">
                                         <input class="radio_input" type="radio" id="1000" value="1000" name="radio_group">
                                         <label class="radio_label" for="1000">$1000</label>
                                     </div>
@@ -130,30 +137,22 @@
         </main>
         <footer>
             <div class="footer_wrapper">
-                <div class="footer_container">
+                <div class="footer_container footer_max">
                     <div class="footer_left">
                         <a class="footer_logo" href="https://hopelessju.github.io/online-zoo/"><img src="../../assets/images/logofooter.png" alt="link to the main page"></a>
-                        <a class="footer_btn" href="./index.html">donate for volunteers</a>
+                        <a class="footer_btn" href="./pages/donate/index.html">donate for volunteers</a>
                         <div class="footer_links">
-                            <div class="fcb_link div_links">
-                                <a href="https://www.facebook.com/" target="_blank"><img src="../../assets/icons/Newfolder/facebook.png" alt="facebook link">Facebook</a>
-                            </div>
-                            <div class="twitter_link div_links">
-                                <a  href="https://twitter.com/" target="_blank"><img src="../../assets/icons/Newfolder/twitter.png" alt="twitter link">Twitter</a>
-                            </div>
-                            <div class="insta_link div_links">
-                                <a  href="https://www.instagram.com/" target="_blank"><img src="../../assets/icons/Newfolder/instagram.png" alt="instagramlink">Instagram</a>
-                            </div>
-                            <div class="youtube_link div_links">
-                                <a class="youtube_link" href="https://www.youtube.com/" target="_blank"> <img src="../../assets/icons/Newfolder/youtube.png" alt="youtube link"></img>YouTube</a>
-                            </div>
+                            <a class="fcb_link" href="https://www.facebook.com/" target="_blank"><img src="../../assets/icons/facebook.svg" alt="facebook link"></a>
+                            <a class="twitter_link" href="https://twitter.com/" target="_blank"><img src="../../assets/icons/twitter.svg" alt="twitter link"></a>
+                            <a class="insta_link" href="https://www.instagram.com/" target="_blank"><img src="../../assets/icons/instagram.svg" alt="instagramlink"></a>
+                            <a class="youtube_link" href="https://www.youtube.com/" target="_blank"><img src="../../assets/icons/youtube.svg" alt="youtube link"></a>
                         </div>
                     </div>
                     <div class="footer_middle">
                         <nav class="nav_footer">
                             <ul class="nav_ul">
                                 <li class="nav_li">
-                                    <a class="anchor anchor_about" href="https://hopelessju.github.io/online-zoo/">About</a>
+                                    <a class="anchor anchor_about" href="#">About</a>
                                 </li>
                                 <li class="nav_li">
                                     <a class="anchor anchor_map" href="#">Map</a>
@@ -177,6 +176,68 @@
                             <p>Designed by Alisa Samborskaya <br> ©RSSchool & ©Yem Digital 2021</p>
                         </div>
                     </div>
+                </div>
+                <div class="footer_container footer_min">
+                    <div class="footer_min_left">
+                        <a class="footer_logo" href="https://hopelessju.github.io/online-zoo/"><img src="../../assets/images/logofooter.png" alt="link to the main page"></a>
+                        <a class="footer_btn" href="../pages/donate/index.html">donate for volunteers</a>
+                        <nav class="nav_footer">
+                            <ul class="nav_ul">
+                                <li class="nav_li">
+                                    <a class="anchor anchor_about" href="#">About</a>
+                                </li>
+                                <li class="nav_li">
+                                    <a class="anchor anchor_map" href="#">Map</a>
+                                </li>
+                                <li class="nav_li">
+                                    <a class="anchor anchor_zoos" href="#">Zoos</a>
+                                </li>
+                                <li class="nav_li">
+                                    <a class="anchor anchor_contact" href="#">Contact us</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="footer_min_right">
+                        <div class="footer_links">
+                            <a class="fcb_link" href="https://www.facebook.com/" target="_blank"><img src="../../assets/icons/ellipse-icon.png" alt="facebook link"></a>
+                            <a class="twitter_link" href="https://twitter.com/" target="_blank"><img src="../../assets/icons/ellipse-icon.png" alt="twitter link"></a>
+                            <a class="insta_link" href="https://www.instagram.com/" target="_blank"><img src="../../assets/icons/ellipse-icon.png" alt="instagramlink"></a>
+                            <a class="youtube_link" href="https://www.youtube.com/" target="_blank"><img src="../../assets/icons/ellipse-icon.png" alt="youtube link"></a>
+                        </div>
+                        <div class="footer_designed_by">
+                            <p>Designed by Alisa Samborskaya <br> ©RSSchool & ©Yem Digital 2021</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_container footer_mobile">
+                    <p class="footer_mobile_heading">PetStory online</p>
+                    <div class="footer_links">
+                        <a class="fcb_link" href="https://www.facebook.com/" target="_blank"><img src="../../assets/icons/ellipse-icon.png" alt="facebook link"></a>
+                        <a class="twitter_link" href="https://twitter.com/" target="_blank"><img src="../../assets/icons/ellipse-icon.png" alt="twitter link"></a>
+                        <a class="insta_link" href="https://www.instagram.com/" target="_blank"><img src="../../assets/icons/ellipse-icon.png" alt="instagramlink"></a>
+                        <a class="youtube_link" href="https://www.youtube.com/" target="_blank"><img src="../../assets/icons/ellipse-icon.png" alt="youtube link"></a>
+                    </div>
+                    <a class="footer_btn" href="./pages/donate/index.html">donate for volunteers</a>
+                    <div class="footer_designed_by">
+                        <p>Designed by Alisa Samborskaya <br> ©RSSchool & ©Yem Digital 2021</p>
+                    </div>
+                    <nav class="nav_footer">
+                        <ul class="nav_ul">
+                            <li class="nav_li">
+                                <a class="anchor anchor_about" href="#">About</a>
+                            </li>
+                            <li class="nav_li">
+                                <a class="anchor anchor_map" href="#">Map</a>
+                            </li>
+                            <li class="nav_li">
+                                <a class="anchor anchor_zoos" href="#">Zoos</a>
+                            </li>
+                            <li class="nav_li">
+                                <a class="anchor anchor_contact" href="#">Contact us</a>
+                            </li>
+                        </ul>
+                    </nav>
                 </div>
             </div>
         </footer>
