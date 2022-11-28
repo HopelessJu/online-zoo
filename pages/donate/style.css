@@ -636,7 +636,7 @@ h1 {
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
-    line-height: 140%;
+    line-height: 190%;
     color: #FFFFFF;
 }
 
@@ -810,7 +810,7 @@ h1 {
     }
     }
 
-@media all and (max-width: 62.5625em) {
+@media all and (max-width: 1000px) {
 header {
     z-index: 2;
 }
@@ -840,7 +840,7 @@ header {
 
 .feed_wrapper {
     box-sizing: border-box;
-    padding: 2.5em 2em 0 2em;
+    padding: 2.5em 2em 1.9em 2em;
 }
 
 .feed_description {
@@ -855,8 +855,13 @@ header {
 .pay_head h2 {
     margin-bottom: 0.7rem;
 }
+
 .feed_container {
-    padding: 20px 42px 77px 44px;
+    padding: 20px 42px 47px 44px;
+}
+
+.pay_pictures {
+    width: 98%;
 }
 
 .five-k {
@@ -912,6 +917,7 @@ header {
 .footer_links {
     row-gap: 5px;
     width: 40%;
+    line-height: 132%;
 }
 
 .footer_middle {
@@ -1851,11 +1857,11 @@ header {
     }
 
     .math_sign {
-        margin: 0px 30px 53px 7px;
+        margin: 0px 34px 53px 7px;
     }
 
     .pay_pictures {
-        width: 120%;
+        width: 122%;
         margin-left: -7%;
         margin-bottom: 0.3em;
     }
