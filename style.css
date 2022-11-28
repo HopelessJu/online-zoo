@@ -998,9 +998,15 @@ main {
     box-sizing: border-box;
 }
 
+.nav_footer ul {
+    width: 87%;
+}
+
+
+
 .footer_right {
-    margin-left: -8px;
-    width: 31%;
+    margin-left: -14px;
+    width: 31.5%;
 }
 
 .subscribe {
@@ -1015,7 +1021,6 @@ main {
 
 .submit_form {
     display: flex;
-    margin-right: -6px;
 }
 
 .submit_form:focus-within button {
@@ -1414,9 +1419,9 @@ header {
 }
 
 .watch_btn {
-    width: 19em;
+    width: 18.9em;
     margin-top: 48.2%;
-    margin-left: -35.4%;
+    margin-left: -36%;
 }
 
 .watch_online {
@@ -1608,6 +1613,10 @@ header {
     margin-top: 19.6em;
     margin-left: -4.5em;;
     width: 45.35%;
+}
+
+.nav_footer ul {
+    width: 85%;
 }
 
 .footer_right {
@@ -2126,20 +2135,20 @@ header {
     .watch_text {
         margin-left: 59%;
         margin-top: 19.8%;
-        width: 4.5em;
+        width: 4.4em;
         font-weight: 700;
-        font-size: 3.18em;
-        line-height: 81%;
+        font-size: 54px;
+        line-height: 76%;
     }
 
     .watch_text span {
-        margin-left: -11px;
+        margin-left: -4px;
     }
 
     .watch_btn {
         margin-top: 50.8%;
-        margin-left: -91.2%;
-        width: 18.5em;
+        margin-left: -93%;
+        width: 18.7em;
     }
 
     .backstage_wrapper {
@@ -2408,6 +2417,10 @@ header {
         margin-left: -3.85em;
         width: 105%;
     }
+
+    .nav_footer ul {
+    width: 105.5%;
+}
 
     .footer_links {
         row-gap: 0.6em;
@@ -2880,9 +2893,10 @@ header {
 
         .watch_text {
             margin-left: 58%;
-            margin-top: 37%;
+            margin-top: 37.5%;
             width: 4.4em;
             font-size: 1.7em;
+            line-height: 79%;
         }
 
         .watch_text span {
@@ -3134,8 +3148,12 @@ header {
         .footer_links {
             flex-direction: row;
             justify-content: space-evenly;
-            width: 81%;
+            width: 83%;
             margin-left: 2em;
+        }
+
+        .nav_footer ul {
+            width: 86.5%;
         }
 
         .footer_btn {
