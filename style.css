@@ -833,7 +833,7 @@ main {
     line-height: 120%;
     color: #3f3f3f;
     overflow: hidden;
-    max-height: 90%;
+    max-height: 86%;
 }
 
 .comment_text::-webkit-scrollbar {
