@@ -39,10 +39,31 @@
                     </ul>
                 </nav>
                 <div class="designed_by"><a class="header_designed" href="https://www.figma.com/file/jfEFwkXVj1WRq7sUHDr8os/PetStory-online?node-id=0%3A1" target="_blank"> Designed by ©</a></div>
-                <div class="burger-menu">
-                    <span class="burger-span"></span>
-                    <span class="burger-span"></span>
-                    <span class="burger-span"></span>
+                <div class="burger-menu" id="burger-menu"></div>
+                <div class="menu-open" id="burger">
+                    <div class="menu-container" id="burger">
+                        <a class="menu_logo" id="burger" href="https://hopelessju.github.io/online-zoo/">PetStory online</a>
+                        <nav class="nav-menu" id="burger">
+                            <ul class="menu-nav-ul" id="burger">
+                                <li class="menu-nav_li" id="burger">
+                                    <a class="anchor-li anchor_about" href="https://hopelessju.github.io/online-zoo/">About</a>
+                                </li>
+                                <li class="menu-nav_li" id="burger">
+                                    <a class="anchor-li anchor_map" href="#">Map</a>
+                                </li>
+                                <li class="menu-nav_li" id="burger">
+                                    <a class="anchor-li anchor_zoos" href="#">Zoos</a>
+                                </li>
+                                <li class="menu-nav_li" id="burger">
+                                    <a class="anchor-li anchor_donate" href="./pages/donate/index.html">Donate</a>
+                                </li>
+                                <li class="menu-nav_li" id="burger">
+                                    <a class="anchor-li anchor_contact" href="#">Contact us</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="designed_by" id="burger"><a class="header_designed" href="https://www.figma.com/file/jfEFwkXVj1WRq7sUHDr8os/PetStory-online?node-id=0%3A1" target="_blank"> Designed by ©</a></div>
+                    </div>
                 </div>
             </div>
         </header>
@@ -68,72 +89,212 @@
             <div class="pets_wrapper">
                 <div class="pets_section">
                     <div class="slider_block">
-                        <div class="slider-frames">
-                            <div class="frame frame-panda">
-                                <div class="card-hover">
-                                    <h2>GIANT PANDAS</h2>
-                                    <span>Native to Southwest China</span>
-                                </div>
-                                <div class="animals panda"></div>
-                                <div class="animal_description panda_herb">
-                                    <h4 class="head_animals">giant pandas</h4>
-                                    <div class="area area_panda">Native to Southwest China</div>
-                                </div>
-                            </div>
-                            <div class="frame frame-eagles">
-                                <div class="card-hover">
-                                    <h2>EAGLES</h2>
-                                    <span>Native to South America</span>
-                                </div>
-                                <div class="animals eagle"></div>
-                                <div class="animal_description eagle_carn">
-                                        <h4 class="head_animals">eagles</h4>
-                                        <div class="area area_eagle">Native to South America</div>
-                                </div>
-                            </div>
-                            <div class="frame frame-gorilla">
-                                <div class="card-hover">
-                                    <h2>GORILLAS</h2>
-                                    <span>Native to Congo</span>
-                                </div>
-                                <div class="animals gorilla"></div>
-                                <div class="animal_description gorilla_herb">
-                                    <h4 class="head_animals">gorillas</h4>
-                                    <div class="area area_gorilla">Native to Congo</div>
-                                </div>
-                            </div>
-                            <div class="frame frame-sloth">
-                                <div class="card-hover">
-                                    <h2>TWO-TOED SLOTH</h2>
-                                    <span> Mesoamerica, South America</span>
-                                </div>
-                                <div class="animals sloth"></div>
-                                <div class="animal_description sloth_herb">
-                                    <h4 class="head_animals">two-toed sloth</h4>
-                                    <div class="area area_sloth">Mesoamerica, South America</div>
-                                </div>
-                            </div>
-                            <div class="frame frame-cheetah">
-                                <div class="card-hover">
-                                    <h2>CHEETAHS</h2>
-                                    <span> Native to Africa</span>
-                                </div>
-                                <div class="animals cheetah"></div>
-                                <div class="animal_description cheetah_carn">
-                                    <h4 class="head_animals">cheetahs</h4>
-                                    <div class="area area_cheetah">Native to Africa</div>
-                                </div>
-                            </div>
-                            <div class="frame frame-penguin">
-                                <div class="card-hover">
-                                    <h2>PENGUINS</h2>
-                                    <span> Native to Antarctica</span>
-                                </div>
-                                <div class="animals penguin"></div>
-                                    <div class="animal_description penguin_carn">
-                                        <h4 class="head_animals">penguins</h4>
-                                        <div class="area area_penguin">Native to Antarctica</div>
+                        <div class="slider-current">
+                            <div class="slider">
+                                <div class="slider-frames" id="frames">
+                                    <div class="frame frame1 frame-panda">
+                                        <div class="card-hover">
+                                            <h2>GIANT PANDAS</h2>
+                                            <span>Native to Southwest China</span>
+                                        </div>
+                                        <div class="animals panda"></div>
+                                        <div class="animal_description panda_herb">
+                                            <h4 class="head_animals">giant pandas</h4>
+                                            <div class="area area_panda">Native to Southwest China</div>
+                                        </div>
                                     </div>
+                                    <div class="frame frame1 frame-eagles">
+                                        <div class="card-hover">
+                                            <h2>EAGLES</h2>
+                                            <span>Native to South America</span>
+                                        </div>
+                                        <div class="animals eagle"></div>
+                                        <div class="animal_description eagle_carn">
+                                                <h4 class="head_animals">eagles</h4>
+                                                <div class="area area_eagle">Native to South America</div>
+                                        </div>
+                                    </div>
+                                    <div class="frame frame1 frame-gorilla">
+                                        <div class="card-hover">
+                                            <h2>GORILLAS</h2>
+                                            <span>Native to Congo</span>
+                                        </div>
+                                        <div class="animals gorilla"></div>
+                                        <div class="animal_description gorilla_herb">
+                                            <h4 class="head_animals">gorillas</h4>
+                                            <div class="area area_gorilla">Native to Congo</div>
+                                        </div>
+                                    </div>
+                                    <div class="frame frame1 frame-sloth">
+                                        <div class="card-hover">
+                                            <h2>TWO-TOED SLOTH</h2>
+                                            <span> Mesoamerica, South America</span>
+                                        </div>
+                                        <div class="animals sloth"></div>
+                                        <div class="animal_description sloth_herb">
+                                            <h4 class="head_animals">two-toed sloth</h4>
+                                            <div class="area area_sloth">Mesoamerica, South America</div>
+                                        </div>
+                                    </div>
+                                    <div class="frame frame1 frame-cheetah">
+                                        <div class="card-hover">
+                                            <h2>CHEETAHS</h2>
+                                            <span> Native to Africa</span>
+                                        </div>
+                                        <div class="animals cheetah"></div>
+                                        <div class="animal_description cheetah_carn">
+                                            <h4 class="head_animals">cheetahs</h4>
+                                            <div class="area area_cheetah">Native to Africa</div>
+                                        </div>
+                                    </div>
+                                    <div class="frame frame1 frame-penguin">
+                                        <div class="card-hover">
+                                            <h2>PENGUINS</h2>
+                                            <span> Native to Antarctica</span>
+                                        </div>
+                                        <div class="animals penguin"></div>
+                                            <div class="animal_description penguin_carn">
+                                                <h4 class="head_animals">penguins</h4>
+                                                <div class="area area_penguin">Native to Antarctica</div>
+                                            </div>
+                                    </div>
+                                </div>
+                                <div class="slider-frames" id="frames">
+                                    <div class="frame frame-panda">
+                                        <div class="card-hover">
+                                            <h2>GIANT PANDAS</h2>
+                                            <span>Native to Southwest China</span>
+                                        </div>
+                                        <div class="animals panda"></div>
+                                        <div class="animal_description panda_herb">
+                                            <h4 class="head_animals">giant pandas</h4>
+                                            <div class="area area_panda">Native to Southwest China</div>
+                                        </div>
+                                    </div>
+                                    <div class="frame frame-eagles">
+                                        <div class="card-hover">
+                                            <h2>EAGLES</h2>
+                                            <span>Native to South America</span>
+                                        </div>
+                                        <div class="animals eagle"></div>
+                                        <div class="animal_description eagle_carn">
+                                                <h4 class="head_animals">eagles</h4>
+                                                <div class="area area_eagle">Native to South America</div>
+                                        </div>
+                                    </div>
+                                    <div class="frame frame-gorilla">
+                                        <div class="card-hover">
+                                            <h2>GORILLAS</h2>
+                                            <span>Native to Congo</span>
+                                        </div>
+                                        <div class="animals gorilla"></div>
+                                        <div class="animal_description gorilla_herb">
+                                            <h4 class="head_animals">gorillas</h4>
+                                            <div class="area area_gorilla">Native to Congo</div>
+                                        </div>
+                                    </div>
+                                    <div class="frame frame-sloth">
+                                        <div class="card-hover">
+                                            <h2>TWO-TOED SLOTH</h2>
+                                            <span> Mesoamerica, South America</span>
+                                        </div>
+                                        <div class="animals sloth"></div>
+                                        <div class="animal_description sloth_herb">
+                                            <h4 class="head_animals">two-toed sloth</h4>
+                                            <div class="area area_sloth">Mesoamerica, South America</div>
+                                        </div>
+                                    </div>
+                                    <div class="frame frame-cheetah">
+                                        <div class="card-hover">
+                                            <h2>CHEETAHS</h2>
+                                            <span> Native to Africa</span>
+                                        </div>
+                                        <div class="animals cheetah"></div>
+                                        <div class="animal_description cheetah_carn">
+                                            <h4 class="head_animals">cheetahs</h4>
+                                            <div class="area area_cheetah">Native to Africa</div>
+                                        </div>
+                                    </div>
+                                    <div class="frame frame-penguin">
+                                        <div class="card-hover">
+                                            <h2>PENGUINS</h2>
+                                            <span> Native to Antarctica</span>
+                                        </div>
+                                        <div class="animals penguin"></div>
+                                            <div class="animal_description penguin_carn">
+                                                <h4 class="head_animals">penguins</h4>
+                                                <div class="area area_penguin">Native to Antarctica</div>
+                                            </div>
+                                    </div>
+                                </div>
+                                <div class="slider-frames" id="frames">
+                                    <div class="frame frame-panda">
+                                        <div class="card-hover">
+                                            <h2>GIANT PANDAS</h2>
+                                            <span>Native to Southwest China</span>
+                                        </div>
+                                        <div class="animals panda"></div>
+                                        <div class="animal_description panda_herb">
+                                            <h4 class="head_animals">giant pandas</h4>
+                                            <div class="area area_panda">Native to Southwest China</div>
+                                        </div>
+                                    </div>
+                                    <div class="frame frame-eagles">
+                                        <div class="card-hover">
+                                            <h2>EAGLES</h2>
+                                            <span>Native to South America</span>
+                                        </div>
+                                        <div class="animals eagle"></div>
+                                        <div class="animal_description eagle_carn">
+                                                <h4 class="head_animals">eagles</h4>
+                                                <div class="area area_eagle">Native to South America</div>
+                                        </div>
+                                    </div>
+                                    <div class="frame frame-gorilla">
+                                        <div class="card-hover">
+                                            <h2>GORILLAS</h2>
+                                            <span>Native to Congo</span>
+                                        </div>
+                                        <div class="animals gorilla"></div>
+                                        <div class="animal_description gorilla_herb">
+                                            <h4 class="head_animals">gorillas</h4>
+                                            <div class="area area_gorilla">Native to Congo</div>
+                                        </div>
+                                    </div>
+                                    <div class="frame frame-sloth">
+                                        <div class="card-hover">
+                                            <h2>TWO-TOED SLOTH</h2>
+                                            <span> Mesoamerica, South America</span>
+                                        </div>
+                                        <div class="animals sloth"></div>
+                                        <div class="animal_description sloth_herb">
+                                            <h4 class="head_animals">two-toed sloth</h4>
+                                            <div class="area area_sloth">Mesoamerica, South America</div>
+                                        </div>
+                                    </div>
+                                    <div class="frame frame-cheetah">
+                                        <div class="card-hover">
+                                            <h2>CHEETAHS</h2>
+                                            <span> Native to Africa</span>
+                                        </div>
+                                        <div class="animals cheetah"></div>
+                                        <div class="animal_description cheetah_carn">
+                                            <h4 class="head_animals">cheetahs</h4>
+                                            <div class="area area_cheetah">Native to Africa</div>
+                                        </div>
+                                    </div>
+                                    <div class="frame frame-penguin">
+                                        <div class="card-hover">
+                                            <h2>PENGUINS</h2>
+                                            <span> Native to Antarctica</span>
+                                        </div>
+                                        <div class="animals penguin"></div>
+                                            <div class="animal_description penguin_carn">
+                                                <h4 class="head_animals">penguins</h4>
+                                                <div class="area area_penguin">Native to Antarctica</div>
+                                            </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="slider_btn_left"></div>
@@ -201,7 +362,64 @@
                                 </div>
                                 <p class="comment_text">Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. <br>
                                     The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.
-<br>The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.
+                                    <br>The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.
+                                    </p>
+                            </div>
+                        </div>
+                        <div class="comment_card_wrapper">
+                            <div class="comment_card">
+                                <div class="card_header">
+                                    <div class="user_photo" style="background-image:url(./assets/icons/frederica.svg); background-repeat: no-repeat;"></div>
+                                    <div class="user_info">
+                                         <h5 class="user_name">Fredericka Michelin</h5>
+                                        <p class="user_location">Local Austria • Yesterday</p>
+                                    </div>
+                                </div>
+                                <p class="comment_text">The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals. <br>
+                                    The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. <br> The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.
+                                    </p>
+                            </div>
+                        </div>
+                        <div class="comment_card_wrapper">
+                            <div class="comment_card">
+                                <div class="card_header">
+                                    <div class="user_photo" style="background-image:url(./assets/icons/mila.svg); background-repeat: no-repeat;"></div>
+                                    <div class="user_info">
+                                         <h5 class="user_name">Mila Riksha</h5>
+                                        <p class="user_location">Local Austria • Yesterday </p>
+                                    </div>
+                                </div>
+                                <p class="comment_text">My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas.
+                                    The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="comment_card_wrapper">
+                            <div class="comment_card">
+                                <div class="card_header">
+                                    <div class="user_photo" style="background-image:url(./assets/icons/Vectoravatar.svg); background-repeat: no-repeat;"></div>
+                                    <div class="user_info">
+                                         <h5 class="user_name">Michael John </h5>
+                                        <p class="user_location">Local Austria • Today</p>
+                                    </div>
+                                </div>
+                                <p class="comment_text">The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals. <br>
+                                    The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="comment_card_wrapper">
+                            <div class="comment_card">
+                                <div class="card_header">
+                                    <div class="user_photo" style="background-image:url(./assets/icons/oskar.svg); background-repeat: no-repeat;"></div>
+                                    <div class="user_info">
+                                         <h5 class="user_name">Oskar Samborsky</h5>
+                                        <p class="user_location">Local Austria • Yesterday</p>
+                                    </div>
+                                </div>
+                                <p class="comment_text">Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. <br>
+                                    The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.
+                                    <br>The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.
                                     </p>
                             </div>
                         </div>
@@ -233,11 +451,55 @@
                                     </p>
                             </div>
                         </div>
+                        <div class="comment_card_wrapper">
+                            <div class="comment_card">
+                                    <div class="card_header">
+                                        <div class="user_photo" style="background-image:url(./assets/icons/Vectoravatar.svg); background-repeat: no-repeat;"></div>
+                                        <div class="user_info">
+                                             <h5 class="user_name">Michael John </h5>
+                                            <p class="user_location">Local Austria • Today</p>
+                                        </div>
+                                    </div>
+                                    <p class="comment_text">The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals. <br>
+                                        The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.
+                                    </p>
+                            </div>
+                        </div>
+                        <div class="comment_card_wrapper">
+                                <div class="comment_card">
+                                    <div class="card_header">
+                                        <div class="user_photo" style="background-image:url(./assets/icons/oskar.svg); background-repeat: no-repeat;"></div>
+                                        <div class="user_info">
+                                             <h5 class="user_name">Oskar Samborsky</h5>
+                                            <p class="user_location">Local Austria • Yesterday</p>
+                                        </div>
+                                    </div>
+                                    <p class="comment_text">Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. <br>
+                                        The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.
+                                        <br>The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.
+                                        </p>
+                                </div>
+                        </div>
+                        <div class="comment_card_wrapper">
+                                <div class="comment_card">
+                                    <div class="card_header">
+                                        <div class="user_photo" style="background-image:url(./assets/icons/frederica.svg); background-repeat: no-repeat;"></div>
+                                        <div class="user_info">
+                                             <h5 class="user_name">Fredericka Michelin</h5>
+                                            <p class="user_location">Local Austria • Yesterday</p>
+                                        </div>
+                                    </div>
+                                    <p class="comment_text">The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals. <br>
+                                        The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. <br> The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.
+                                        </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider_container">
+                            <input class="slider_testimonials" min='0' max="7" type="range" value="0">
+                        </div>
+                        <button class="testimonials_btn">leave feedback</button>
                     </div>
-                    <div class="slider_container">
-                        <input class="slider_testimonials" min="1" max="4" type="range" value="1">
-                    </div>
-                    <button class="testimonials_btn">leave feedback</button>
                 </div>
             </div>
         </main>
