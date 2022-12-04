@@ -1271,13 +1271,13 @@ main {
         background-position-x: -5.95em;
         background-position-y: 0.3em;
         background-size: 118.8%;
-        height: 780px;
     }
 
     .orange_circle {
         padding: 11.5em;
-        top: 5.5%;
-        left: 45.5%;
+        top: 4.3em;
+        right: 30%;
+        left: 46%;
         z-index: 1;
         }
 
