@@ -39,10 +39,31 @@
                     </ul>
                 </nav>
                 <div class="designed_by"><a class="header_designed" href="https://www.figma.com/file/jfEFwkXVj1WRq7sUHDr8os/PetStory-online?node-id=0%3A1" target="_blank"> Designed by ©</a></div>
-                <div class="burger-menu">
-                    <span class="burger-span"></span>
-                    <span class="burger-span"></span>
-                    <span class="burger-span"></span>
+                <div class="burger-menu" id="burger-menu"></div>
+                <div class="menu-open" id="burger">
+                    <div class="menu-container" id="burger">
+                        <a class="menu_logo" id="burger" href="https://hopelessju.github.io/online-zoo/">PetStory online</a>
+                        <nav class="nav-menu" id="burger">
+                            <ul class="menu-nav-ul" id="burger">
+                                <li class="menu-nav_li" id="burger">
+                                    <a class="anchor-li anchor_about" href="https://hopelessju.github.io/online-zoo/">About</a>
+                                </li>
+                                <li class="menu-nav_li" id="burger">
+                                    <a class="anchor-li anchor_map" href="#">Map</a>
+                                </li>
+                                <li class="menu-nav_li" id="burger">
+                                    <a class="anchor-li anchor_zoos" href="#">Zoos</a>
+                                </li>
+                                <li class="menu-nav_li" id="burger">
+                                    <a class="anchor-li anchor_donate" href="./pages/donate/index.html">Donate</a>
+                                </li>
+                                <li class="menu-nav_li" id="burger">
+                                    <a class="anchor-li anchor_contact" href="#">Contact us</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="designed_by" id="burger"><a class="header_designed" href="https://www.figma.com/file/jfEFwkXVj1WRq7sUHDr8os/PetStory-online?node-id=0%3A1" target="_blank"> Designed by ©</a></div>
+                    </div>
                 </div>
             </div>
         </header>
@@ -101,7 +122,7 @@
                                         <label class="radio_label" for="250">$250</label>
                                     </div>
                                     <div class="radio_btn">
-                                        <input class="radio_input" type="radio" id="100" value="100" name="radio_group">
+                                        <input class="radio_input" type="radio" id="100" checked value="100" name="radio_group">
                                         <label class="radio_label" for="100">$100</label>
                                     </div>
                                     <div class="radio_btn">
@@ -115,7 +136,7 @@
                                 </div>
                             </div>
                             <div class="custom_pay">
-                                <input class="custom_input" type="number" max="9999"oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                                <input class="custom_input" type="number" value="100" max="9999"oninput=" javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
                                 type = "number" maxlength = "4" placeholder="Another amount">
                                 <div class="custom_radio_group">
                                     <div class="custom_radio">
@@ -242,4 +263,6 @@
             </div>
         </footer>
     </div>
+    <script src="./script.js"></script>
 </body>
+</html>
