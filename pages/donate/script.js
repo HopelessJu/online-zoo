@@ -14,12 +14,13 @@ inputGroup.forEach(input => {
     })
 })
 
-customInput.addEventListener('change', () => {
+customInput.addEventListener('input', () => {
     let customValue = customInput.value;
+    console.log(customValue);
     inputGroup.forEach(input => {
-        input.removeAttribute('checked')
+        input.removeAttribute('checked');
         if( input.value === customValue) {
-            input.setAttribute('checked', true);
+            setTimeout(() => input.setAttribute('checked', true), 0);
         }
     })
 })
