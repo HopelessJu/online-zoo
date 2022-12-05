@@ -5,6 +5,7 @@ const next = document.querySelector('.slider_btn_right');
 const oldChildren = document.querySelector('.frame');
 const menuOpen = document.querySelector('.menu-open');
 let frames = document.querySelectorAll('.frame1');
+let framesToStopProp = document.querySelectorAll('.frame');
 const burgerAll = '#burger';
 const burgerMenu = document.querySelector('.burger-menu');
 const burgerId = document.querySelector(burgerAll);
@@ -18,12 +19,6 @@ let isSliderAnimationFinished = true;
 let direction;
 
 //SLIDER PETS
-
-frames.forEach(frame => {
-    frame.addEventListener ('transitionend', (e) => {
-        e.stopImmediatePropagation();
-    })
-})
 
 function getRandomCardSet() {
     const sliderFrames = document.querySelectorAll('.slider-frames');
@@ -71,6 +66,11 @@ slider.addEventListener('transitionend', () => {
     isSliderAnimationFinished = true;
 })
 
+framesToStopProp.forEach(frame => {
+    frame.addEventListener ('transitionend', (e) => {
+        e.stopImmediatePropagation();
+    })
+})
 // SLIDER PETS END
 
 //BURGER-MENU
